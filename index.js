@@ -57,9 +57,9 @@ const instagram = 'http://www.instagram.com/';
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:Hippko\n' // Nama kamu
+            + 'FN:SPARTANO\n' // Nama kamu
             + 'ORG:Lexa;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=553181030138:+55 (31) 8103-0138\n' //Nomor whatsapp kamu
+            + 'TEL;type=CELL;type=VOICE;waid=553181003881:+55 (31) 8100-3881\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '/','*','.'
 blocked = []
@@ -300,11 +300,11 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["553181030138@s.whatsapp.net"] // replace this with your number
-			const mod = [ownerNumber,"553181030138@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["553181030138@s.whatsapp.net"]//ubah nomor lo
-			const frendsowner = ["553181030138@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["553181030138@s.whatsapp.net","556796005372@s.whatsapp.net","557599941062@s.whatsapp.net","558598669655@s.whatsapp.net","5511949051934@s.whatsapp.net","554792091566@s.whatsapp.net","558699541889@s.whatsapp.net","559294313229@s.whatsapp.net","554298653614@s.whatsapp.net"]
+			const ownerNumber = ["553181003881@s.whatsapp.net"] // replace this with your number
+			const mod = [ownerNumber,"553181003881@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["553181003881@s.whatsapp.net"]//ubah nomor lo
+			const frendsowner = ["553181003881@s.whatsapp.net"]//ubah nomor lo
+			const premium = ["5531810038818@s.whatsapp.net","5528999995062@s.whatsapp.net","553181030138@s.whatsapp.net","559884779656@s.whatsapp.net","553171465719@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
