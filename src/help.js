@@ -3,91 +3,38 @@ const help = (prefix) => {
 
 ╔══㋠【 INFO 】㋠══
 ║
-╠➢ *ᬊ͜͡𝐒𝐏么𝐑𝐓么𝐍❂⋆➣-BOT*
-╠➢ *V1.0*
-╠➢ *DESDE: 11/03/2021*
-╠➢ *CRIADOR DO BOT: ᬊ͜͡𝐒𝐏么𝐑𝐓么𝐍❂⋆➣*
-╠➢ *wa.me/+553181003881*
+╠➢ *𝐇𝐏𝐊 ♱ 𝐒𝐏𝐓*
+╠➢ *x X x*
+╠➢ *BOT USER: 𝐇𝐏𝐊 ♱ 𝐒𝐏𝐓*
+╠➢ *wa.me/5528999995062*
+╠➢ *wa.me/553181003881*
 ╠➢ 𝐒𝐓𝐀𝐓𝐔𝐒: ON
-╠➢ *Algumas funções ainda n pegam*
 ║
-╠══㋠【 ᬊ͜͡𝐒𝐏么𝐑𝐓么𝐍❂⋆➣ 】㋠══
+╠══㋠【𝐶𝐻𝐴𝑇 𝐻𝐼𝑃𝑃𝐾𝑂 😈🌹】㋠══
 ║
-║Ta esperando oque poha ? Salva o contato do mestre 
-║http://Wa.me/+55318100-3881
-║
-╠══㋠【 PREMIUM 】㋠══
-║
-║1 *${prefix}qrcode [premium]*
-║2 *${prefix}chentai [premium]*
-║3 *${prefix}gcpf [premium]*
-║4 *${prefix}gbin [premium]*
-║5 *${prefix}pack [premium]*
-║6 *${prefix}destrava [premium]*
-║7 *${prefix}gpessoa [premium]*
+║https://chat.whatsapp.com/EfKk1b0M2Yg44pGCeuB5CV
 ║
 ╠══㋠【 MENU 】㋠══
 ║
-║8 *${prefix}figu*
+║8 *${prefix}fig*
 ║9 *${prefix}toimg*
 ║10 *${prefix}meme*
 ║11 *${prefix}memeindo*
-║12 *${prefix}tts*
+║12 *${prefix}gtts*
 ║13 *${prefix}lolih [on]*
-║14 *${prefix}nsfwloli [off]*
 ║15 *${prefix}url2img*
 ║16 *${prefix}leens [na legenda]*
 ║17 *${prefix}wait [na legenda]*
 ║18 *${prefix}setprefix*
-║19 *${prefix}gay [@]*
 ║20 *${prefix}wame*
 ║21 *${prefix}play (nome da msc)*
-║
-╠══㋠【 OUTROS 】㋠══
-║
-║22 *${prefix}linkgp*
-║23 *${prefix}simih [1/0]*
-║24 *${prefix}marcar*
-║25 *${prefix}add [@]*
-║26 *${prefix}banir [@]*
-║27 *${prefix}promover [@]*
-║28 *${prefix}rebaixar*
-║29 *${prefix}admins*
-║30 *${prefix}marcar2*
-║31 *${prefix}bc [texto]* (ele faz uma ™)
-║32 *${prefix}marcar3*
-║33 *${prefix}bloqueados*
-║34 *${prefix}bloquear [@]*
-║35 *${prefix}desbloquear [@]*
-║36 *${prefix}limpar*
-║37 *${prefix}bc [ *texto* ]*
-║38 *${prefix}bemvindo [1/0]*
-║39 *${prefix}clonar [@]*
-║40 *${prefix}help1*
-║41 *${prefix}dono*
-║42 *${prefix}owner*
-║43 *${prefix}tts [texto]*
-║44 *${prefix}setnome*
-║45 *${prefix}termux*
-║46 *${prefix}setfoto*
-║47 *${prefix}grupoinfo*
-║48 *${prefix}ytmp4*
-║49 *${prefix}bomdia*
-║50 *${prefix}boanoite*
-║51 *${prefix}marcar*
-║52 *${prefix}marcar2*
-║53 *${prefix}marcar3*
 ║
 ╠══㋠【 IMAGENS 】㋠══
 ║
 ║54 *${prefix}loli* [off]
 ║55 *${prefix}loli1*
 ║56 *${prefix}hentai*
-║57 *${prefix}dono*
 ║58 *${prefix}porno*
-║59 *${prefix}boanoite*
-║60 *${prefix}bomdia*
-║61 *${prefix}boatarde*
 ║62 *${prefix}mia*
 ║63 *${prefix}mia1*
 ║64 *${prefix}mia2*
@@ -98,7 +45,6 @@ const help = (prefix) => {
 ║70 *${prefix}meme*   
 ║71 *${prefix}lofi*
 ║72 *${prefix}malkova*
-║73 *em manutenção*
 ║74 *${prefix}nsfwloli1*
 ║75 *${prefix}reislin*
 ║
@@ -108,22 +54,16 @@ const help = (prefix) => {
 ║77 *${prefix}simih 0 (para desativar)*
 ║ *${prefix}simi (sua mensagem)*
 ║
-╠══㋠【 EM TESTE 】㋠══
-║
-║78 Comandos sem prefixo
-║79 Um ai que não posso dizer
-║80 Mais funções premium
-║
 ╠══㋠【 PREMIUM 】㋠══
 ║
-║Para ter acesso vip mande /daftarvip
+║☆Para ter acesso vip mande: [prefixo]daftarvip☆
+║
 ║81 *${prefix}dado*
 ║82 *${prefix}cekvip*
 ║83 *${prefix}premiumlist*
 ║84 *${prefix}delete*
 ║85 *${prefix}modapk*
 ║86 *${prefix}indo10*
-║87 *${prefix}daftarvip [para virar Premium]*
 ║88 *${prefix}qrcode*
 ║89 *${prefix}chentai*
 ║90 *${prefix}gcpf*
@@ -144,15 +84,14 @@ const help = (prefix) => {
 ║102 *${prefix}rebaixar*
 ║103 *${prefix}admins*
 ║104 *${prefix}marcar*
-║105 *${prefix}marcar2*
-║106 *${prefix}marcar3*
 ║107 *${prefix}bemvindo [1/0]*
 ║108 *${prefix}grupoinfo*
 ║109 *${prefix}bomdia*
 ║110 *${prefix}boatarde*
 ║111 *${prefix}boanoite*
 ║112 *${prefix}setdesc*
-║113 *${prefix}bug [sua mensagem]*
+║112 *${prefix}antilink*
+║112 *${prefix}antiracismo*
 ║
 ╠══㋠【 ESPECIFICO DO BOT 】㋠══
 ║
@@ -162,6 +101,7 @@ const help = (prefix) => {
 ║117 *${prefix}ping [ver velocidade do bot]*
 ║118 *${prefix}termux*
 ║119 *${prefix}gay [@]*
+║119 *${prefix}gado [@]*
 ║120 *${prefix}wame*
 ║121 *${prefix}map (nome)*
 ║122 *${prefix}setppbot (marque uma img)*
@@ -170,59 +110,19 @@ const help = (prefix) => {
 ║125 *${prefix}timer*
 ║
 ╠══㋠【 MAIS ALGUNS 】㋠══
+║xxx1 a 3
+║peep1 a 3
+║m4
+║1800
 ║
-║126 *${prefix}neko*
-║127 *${prefix}ttp [texto]*
-║128 *${prefix}testime*
-║129 *${prefix}tomp3*
-║130 *${prefix}animehug*
-║131 *${prefix}shoturl*
-║132 *${prefix}pokemon*
+╠══㋠【 BOT USER 】㋠══
 ║
-╠══㋠【 NO PREFIX 】㋠══
+║ *NOME: 𝐇𝐏𝐊 ♱ 𝐒𝐏𝐓*
+║ *Hippko Totoso Pauzudo: wa.me/5528999995062*
+║ *Spartano pika-de-mel: wa.me/553181003881
+║ *IDADE: 100a.c*
 ║
-║Se pa uns não pegam:
-║ *fdp*
-║ *bot*
-║ *corno*
-║ *vsfd*
-║ *tmnc*
-║ *cade o bot*
-║ *canta*
-║ *grita*
-║ *hylander*
-║ *jacare*
-║ *diaazul*
-║ *botapanhou*
-║ *botarrombado*
-║ *botgay*
-║ *botviado*
-║ *carioca*
-║ *comeuadm*
-║ *comofezbot*
-║ *donodogp*
-║ *egrilo*
-║ *karolsemk*
-║ *jogaroxo*
-║ *lemonhaze*
-║ *lilpeep*
-║ *meupai*
-║ *oniichan*
-║ *saidogp*
-║ *somhentai*
-║ *yamete*
-╠══㋠【 Generais 】㋠══
-║
-║  QUER O BOT EM SEU GRUPO ?
-║  ENTRE EM CONTATO
-║
-║ *NICK: ᬊ͜͡𝐒𝐏么𝐑𝐓么𝐍❂⋆➣
-║ *WPP: wa.me/+553181003881*
-║
-║ *NICK: HIPPKO *
-║ *WPP: wa.me/+553181030138*
-║
-╚═【 ᬊ͜͡𝐒𝐏么𝐑𝐓么𝐍❂⋆➣-BOT 】`
+╚═【 𝐇𝐏𝐊 ♱ 𝐒𝐏𝐓 】`
 }
 
 exports.help = help
