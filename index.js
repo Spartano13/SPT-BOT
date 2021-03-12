@@ -52,19 +52,19 @@ const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
-const BotName = 'Spartanobot'; 
+const BotName = 'HPK-SPT'; 
 const instagram = 'http://www.instagram.com/'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:SPARTANO\n' // Nama kamu
+            + 'FN:HPK-SPT\n' // Nama kamu
             + 'ORG:Lexa;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=553181003881:+55 (31) 8100-3881\n' //Nomor whatsapp kamu
+            + 'TEL;type=CELL;type=VOICE;waid=5528999995062:+55 (28) 99999-5062\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '/','*','.'
 blocked = []
 limitawal = '999999999'
-cr = '*Spartano*'
+cr = '*HPK-SPT*'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
@@ -276,7 +276,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-					wait: '❬❗❭ Espere[+2min] se não for tenta de novo!',
+					wait: 'Aguarda aí...(nãoFlooda)🤨🔥,
 					success: '️❬ ✔ ❭ Sucesso 🖤',
 					levelon: '❬ ✔ ❭ *leveling* *ativado*',
 					leveloff: ' ❬ X ❭  *leveling* *desativado*',
@@ -289,22 +289,22 @@ async function starts() {
 				only: {
 					group: '[❗] Este comando só pode ser usado em grupos! ❌',
 					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
-					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD Spartano BOT*',
+					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD HIPPKO BOT*',
 					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
 					ownerG: '[❗] Proprietário? Este é um recurso especial para o proprietário do bot ❌',
 					ownerB: '[❗] Proprietário? Este é um recurso especial para o proprietário do bot ❌',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmão. Você não está registrado como amigo do meu dono Spartano. Registre-se para fazer amizade com o bot Spartano por meio, \n\nComando : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Spartano|19\n\n──「 SPT BOT 」──`,
+					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmão. Você não está registrado como amigo do meu dono. Registre-se para fazer amizade com o bot por meio, \n\nComando : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Hpk-Spt|19\n\n──「 HPK-SPT 」──`,
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
 				}
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["553181003881@s.whatsapp.net"] // replace this with your number
-			const mod = [ownerNumber,"553181003881@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["553181003881@s.whatsapp.net"]//ubah nomor lo
-			const frendsowner = ["553181003881@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["5531810038818@s.whatsapp.net","5528999995062@s.whatsapp.net","553181003881@s.whatsapp.net","559884779656@s.whatsapp.net","553171465719@s.whatsapp.net"]
+			const ownerNumber = ["5528999995062@s.whatsapp.net","553181003881@s.whatsapp.net"] // replace this with your number
+			const mod = [ownerNumber,"5528999995062@s.whatsapp.net","553181003881@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["5528999995062@s.whatsapp.net","553181003881@s.whatsapp.net"]//ubah nomor lo
+			const frendsowner = ["5528999995062@s.whatsapp.net","553181003881@s.whatsapp.net"]//ubah nomor lo
+			const premium = ["5528999995062@s.whatsapp.net","558193586439@s.whatsapp.net","553181003881@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -426,7 +426,7 @@ if (text.includes("placa"))
  })
  }		        
 
-        if (messagesC.includes("preto")){
+        if (messagesC.includes("negro")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
 		if (isGroupAdmins) return reply('pow cara, não fale essas coisas só pq vc é adm, isso pode ofender alguém e fazer a pessoa ficar depremida😣')
@@ -664,6 +664,62 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
+			if (messagesC.includes("xxx1")){
+			if (isBanned) return reply(mess.only.benned)    
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/xxx1.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+	
+	if (messagesC.includes("xxx2")){
+			if (isBanned) return reply(mess.only.benned)    
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/xxx2.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+	
+	if (messagesC.includes("xxx3")){
+			if (isBanned) return reply(mess.only.benned)    
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/xxx3.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+	
+	if (messagesC.includes("peep1")){
+			if (isBanned) return reply(mess.only.benned)    
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/peep1.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+	
+	if (messagesC.includes("peep2")){
+			if (isBanned) return reply(mess.only.benned)    
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/peep2.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+	
+	if (messagesC.includes("peep3")){
+			if (isBanned) return reply(mess.only.benned)    
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/peep3.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+	
+	if (messagesC.includes("m4")){
+			if (isBanned) return reply(mess.only.benned)    
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/m4.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+	
+	if (messagesC.includes("1800")){
+			if (isBanned) return reply(mess.only.benned)    
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/1800.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+	
 			if (messagesC.includes("canta")){
 			if (isBanned) return reply(mess.only.benned)    
 			client.updatePresence(from, Presence.composing)
@@ -681,14 +737,14 @@ if (text.includes("placa"))
 			reply("quer chamar atenção?")
 	}
 	
-		if (messagesC.includes("corno")){
+		if (messagesC.includes("viado")){
 			client.updatePresence(from, Presence.composing)
-			reply("é mesmo é?")
+			reply("seu pai aquele viadinho")
 	}
 	
 		if (messagesC.includes("tmnc")){
 			client.updatePresence(from, Presence.composing)
-			reply("vai vc, tu ja me disse q é mo bom")
+			reply("vai vc lixo desgraçado")
 	}
 	
 		if (messagesC.includes("vsfd")){
@@ -704,6 +760,16 @@ if (text.includes("placa"))
 		if (messagesC.includes("bot")){
 			client.updatePresence(from, Presence.composing)
 			reply("Não vou ficar te respondendo manda /menu e usa os comandos que ta ai seu arrombado")
+	}
+	
+		if (messagesC.includes("oi")){
+			client.updatePresence(from, Presence.composing)
+			reply("oi tudo bem ?")
+	}
+	
+	if (messagesC.includes("trava")){
+			client.updatePresence(from, Presence.composing)
+			reply("trava eu não po...chip ta caro 🤧")
 	}
 	
 			if (messagesC.includes("tobi")){
@@ -744,7 +810,7 @@ if (text.includes("placa"))
 	
 				if (messagesC.includes("mandememe")){
 			client.updatePresence(from, Presence.composing)
-			data = fs.readFileSync('./src/Spartanojokes.js');
+			data = fs.readFileSync('./src/hippkojokes.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -764,7 +830,7 @@ if (text.includes("placa"))
 			switch(command) {
 				case 'help':
 				case 'menu':
-				case 'Spartano':
+				case 'hippko':
 				case 'pika':
 					client.sendMessage(from, help(prefix), text)
 					break
@@ -1294,7 +1360,7 @@ if (text.includes("placa"))
 					pineq = await getBuffer(trest)
 					client.sendMessage(from, pineq, image, { caption: '*Pinterest*\n\n*Resultado Pesquisa : '+pinte+'*', quoted: mek })
 					break
-//@SpartanoYT					
+//@hippkoYT					
 				case 'pokemon':
                     client.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://api.fdci.se/rep.php?gambar=pokemon`, {method: 'get'})
@@ -1409,7 +1475,7 @@ if (text.includes("placa"))
 					reply(teks.trim())
 					await limitAdd(sender) 
 					break 
-				case 'textSpartano':
+				case 'texthippko':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(9)
 					if (tels.ength > 10) return reply('O texto é longo, até 9 caracteres')
@@ -1549,7 +1615,7 @@ if (text.includes("placa"))
 					for (let V of premium) {
 						teks += `│+  @${V.split('@')[0]}\n`
 					}
-					teks += `│+ Total : ${premium.length}\n╰──────*「 *SpartanoBOT* 」*────`
+					teks += `│+ Total : ${premium.length}\n╰──────*「 *hippkoBOT* 」*────`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
 					break
                   case 'qrcode':
@@ -1563,7 +1629,7 @@ if (text.includes("placa"))
 		        case 'wame':
                   client.updatePresence(from, Presence.composing) 
                   options = {
-                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*Spartano DOMINA*`,
+                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*hippko DOMINA*`,
                   contextInfo: { mentionedJid: [sender] }
                   }
                   client.sendMessage(from, options, text, { quoted: mek } )
@@ -1616,7 +1682,7 @@ if (text.includes("placa"))
                 break
 				case 'daftar':
 					client.updatePresence(from, Presence.composing)
-					if (args.length < 1) return reply(`Parameter Salah\nCommand : ${prefix}daftar nama|umur\nContoh : ${prefix}daftar Spartano|19`)
+					if (args.length < 1) return reply(`Parameter Salah\nCommand : ${prefix}daftar nama|umur\nContoh : ${prefix}daftar hippko|19`)
 					var reg = body.slice(8)
 					var jeneng = reg.split("|")[0];
 					var umure = reg.split("|")[1];
@@ -1667,7 +1733,7 @@ if (text.includes("placa"))
                     const latensi = speed() - timestamp
                     client.updatePresence(from, Presence.composing) 
 				uptime = process.uptime()
-                    client.sendMessage(from, `Speed: *${latensi.toFixed(4)} _Segundos_*\nDispositivo: *Xiaomi*\nRAM: *6/64*\nData: *Telkomsel*\nRede: *4G*\nStatus: *Ainda não cobrado*\nTipo do bot: *Termux Somente*\n\n*O bot esteve ativo por*\n*${kyun(uptime)}*`, text, { quoted: mek})
+                    client.sendMessage(from, `Speed: *${latensi.toFixed(4)} _Segundos_*\nDispositivo: *SamsungA71*\nRAM: *6/128*\nData: *Telkomsel*\nRede: *Wi-Fi*\nStatus: *Ainda não cobrado*\nTipo do bot: *Termux Somente*\n\n*O bot esteve ativo por*\n*${kyun(uptime)}*`, text, { quoted: mek})
                     break
 				case 'delete':
 				case 'del':
@@ -1787,8 +1853,8 @@ if (text.includes("placa"))
 					client.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*\n\*Resultado da pesquisa* : *${tels}*`})
                     await limitAdd(sender)
 					break
-                case 'Spartanojokes':
-				 data = fs.readFileSync('./src/Spartanojokes.js');
+                case 'hippkojokes':
+				 data = fs.readFileSync('./src/hippkojokes.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -2116,6 +2182,13 @@ break
 					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
 					const kl = ti[Math.floor(Math.random() * ti.length)]
 					client.sendMessage(from, 'Como você é gay: *'+rate+'*\n\nSua porcentagem gay : '+ kl+'%', text, { quoted: mek })
+					break
+					case 'gado':		
+	            	if (args.length < 1) return reply('marque seus amigos gados KKK!')
+					rate = body.slice(1)
+					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
+					const kl = ti[Math.floor(Math.random() * ti.length)]
+					client.sendMessage(from, 'Como você é gado: *'+rate+'*\n\nSua porcentagem de gado : '+ kl+'%', text, { quoted: mek })
 					break
                   case 'timer':
 				if (args[1]=="segundo") {var timer = args[0]+"000"
@@ -2463,13 +2536,13 @@ break
                    break
 					case 'totaluser':
 					if (!isOwner) return reply(mess.only.ownerB)    
-					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOO Spartano BOT 👑* 」\n\`\`\``
+					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOO hippko BOT 👑* 」\n\`\`\``
 					no = 0
 					for (let hehehe of user) {
 						no += 1
 						teks += `\`\`\`[${no.toString()}]\`\`\` @${hehehe.split('@')[0]}\n`
 					}
-					teks += `│+ Total de usuários : ${user.length}\n╰──────*「 *Spartano* 」*────`
+					teks += `│+ Total de usuários : ${user.length}\n╰──────*「 *hippko* 」*────`
 					 client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": user}})
 					break
 				case 'desligar':
@@ -2603,7 +2676,7 @@ break
 					await limitAdd(sender) 
 					break 
 					
-// recursos anime, random @Spartano domina vida
+// recursos anime, random @hippko domina vida
 
                 case 'anjing':
                    if (!isGroup) return reply(ind.groupo())
@@ -2989,7 +3062,7 @@ break
 					buff = await getBuffer(anu.result)
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
-				case 'textSpartano':
+				case 'texthippko':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(9)
 					if (tels.ength > 10) return reply('O texto é longo, até 9 caracteres')
@@ -3082,7 +3155,7 @@ break
 			    case 'owner':
 			    case 'dono':
                     client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                    client.sendMessage(from, 'Meu dono é esse gasoso aí tal de "Spartano"🙄, chama ele aí ele diz que é "Top"',MessageType.text, { quoted: mek} )
+                    client.sendMessage(from, 'Meus donos -> Hippko totoso pauzudo wa.me/ | Spartano pika-de-mel wa.me/553181003881"',MessageType.text, { quoted: mek} )
                     break
                 case 'fitnah':	
 				case 'fake':          
@@ -3365,7 +3438,7 @@ break
 					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
 					me = client.user
 					uptime = process.uptime()
-					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* SpartanoBOT\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* \n*──────────────────*` , text, { quoted: mek, })
+					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* HPK-SPT\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* \n*──────────────────*` , text, { quoted: mek, })
 					break
 					case 'dellvip':
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -3374,7 +3447,7 @@ break
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = '╭────「 *PREMIUM👑* 」──*\n│+ *Número* : \n│+ *Status*: *DESATIVO*\n│ Te vejo para o próximo pedido🙂\n*╰──────「 *posição* 」────'
+						teks = '╭────「 *PREMIUM👑* 」──*\n│+ *Número* : \n│+ *Status*: *DEATIVO*\n│ Te vejo para o próximo pedido🙂\n*╰──────「 *posição* 」────'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
 						}
@@ -3385,9 +3458,9 @@ break
 					client.sendMessage(from, mentioned)
 				    }
 					break
-					case 'Spartanodmin':
+					case 'hippkodmin':
 					tod = await getBuffer(``)
-					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOT Spartano ✨* 」\n*│+ wa.me/553181003881*╰──────*「 *Spartano* 」*────*\n\n*_SE QUER SER ADMIN DO BOT Spartano_*\n*_Tipo /iklan_*' })
+					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOT hippko ✨* 」\n*│+ wa.me/5528999995062*╰──────*「 *hippko* 」*────*\n\n*_SE QUER SER ADMIN DO BOT hippko_*\n*_Tipo /iklan_*' })
 					break
 				case 'iklan':
 					client.sendMessage(from, iklan(prefix) , text, { quoted: mek })
@@ -3396,7 +3469,7 @@ break
                     if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					sa = await getBuffer(`https://i.ibb.co/PcQ6tsB/79ac87b9358c.jpg`)
-					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *PREMIUM USER👑* 」\n*│+ wa.me/553181003881*╰──────*「 * Spartano* 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO Spartano BOT_*\n*wa.me/+553181003881*' })
+					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *PREMIUM USER👑* 」\n*│+ wa.me/5528999995062*╰──────*「 * hippko* 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO hippko BOT_*\n*wa.me/5528999995062*' })
 					break
 					case 'cekmod': 
  
@@ -3464,7 +3537,7 @@ break
 				case 'bot':
 			     	memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos basicos para bot:_*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*Spartano Domina*'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos basicos para bot:_*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*hippko Domina*'})
 					break
 				case 'belle3':
 					memein = await kagApi.memeindo()
@@ -3527,7 +3600,7 @@ break
 				case 'canal':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://imgur.com/gallery/xuTCBPO`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do Spartano:*\n\n Tem não'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do hpk-spt:*\n\n Tem não'})
 					break
 				case 'nsfwloli1':
 					memein = await kagApi.memeindo()
@@ -3578,7 +3651,7 @@ break
 				case 'dono':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHz-fYDTGtGS7n-fMa1881LTvi6A6Cw52ldg&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* Spartano\n*YOUTUBE:* Tem não\n*WPP:* wa.me/+553181003881\n*\n\nEspero que tenham gostado do bot️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* hippko\n*YOUTUBE:* Tem não\n*WPP:* wa.me/+5528999995062\n*\n\nEspero que tenham gostado do bot️'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
