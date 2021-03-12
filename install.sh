@@ -7,7 +7,7 @@ apt-get install libwebp
 apt-get install ffmpeg
 apt-get install wget
 apt-get install tesseract
-wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/Spartano13/SPT-BOT.git"
+wget -O ~ /../usr/share/tessdata/ind.traineddata " https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true "
 npm install
 
 echo "[*] Todas as dependências foram instaladas, execute o comando \"npm start\" para iniciar imediatamente o script"
