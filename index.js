@@ -289,11 +289,11 @@ async function starts() {
 				only: {
 					group: '[❗] Este comando só pode ser usado em grupos! ❌',
 					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
-					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD hippko BOT*',
+					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD Spartano BOT*',
 					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
 					ownerG: '[❗] Proprietário? Este é um recurso especial para o proprietário do bot ❌',
 					ownerB: '[❗] Proprietário? Este é um recurso especial para o proprietário do bot ❌',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmão. Você não está registrado como amigo do meu dono hippko. Registre-se para fazer amizade com o bot hippko por meio, \n\nComando : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar hippko|19\n\n──「 hippko BOT 」──`,
+					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmão. Você não está registrado como amigo do meu dono Spartano. Registre-se para fazer amizade com o bot Spartano por meio, \n\nComando : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Spartano|19\n\n──「 SPT BOT 」──`,
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
 				}
@@ -304,7 +304,7 @@ async function starts() {
 			const mod = [ownerNumber,"553181003881@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["553181003881@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["553181003881@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["5531810038818@s.whatsapp.net","5528999995062@s.whatsapp.net","553181030138@s.whatsapp.net","559884779656@s.whatsapp.net","553171465719@s.whatsapp.net"]
+			const premium = ["5531810038818@s.whatsapp.net","5528999995062@s.whatsapp.net","553181003881@s.whatsapp.net","559884779656@s.whatsapp.net","553171465719@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -744,7 +744,7 @@ if (text.includes("placa"))
 	
 				if (messagesC.includes("mandememe")){
 			client.updatePresence(from, Presence.composing)
-			data = fs.readFileSync('./src/hippkojokes.js');
+			data = fs.readFileSync('./src/Spartanojokes.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -764,7 +764,7 @@ if (text.includes("placa"))
 			switch(command) {
 				case 'help':
 				case 'menu':
-				case 'hippko':
+				case 'Spartano':
 				case 'pika':
 					client.sendMessage(from, help(prefix), text)
 					break
@@ -1294,7 +1294,7 @@ if (text.includes("placa"))
 					pineq = await getBuffer(trest)
 					client.sendMessage(from, pineq, image, { caption: '*Pinterest*\n\n*Resultado Pesquisa : '+pinte+'*', quoted: mek })
 					break
-//@hippkoYT					
+//@SpartanoYT					
 				case 'pokemon':
                     client.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://api.fdci.se/rep.php?gambar=pokemon`, {method: 'get'})
@@ -1409,7 +1409,7 @@ if (text.includes("placa"))
 					reply(teks.trim())
 					await limitAdd(sender) 
 					break 
-				case 'texthippko':
+				case 'textSpartano':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(9)
 					if (tels.ength > 10) return reply('O texto é longo, até 9 caracteres')
@@ -1549,7 +1549,7 @@ if (text.includes("placa"))
 					for (let V of premium) {
 						teks += `│+  @${V.split('@')[0]}\n`
 					}
-					teks += `│+ Total : ${premium.length}\n╰──────*「 *hippkoBOT* 」*────`
+					teks += `│+ Total : ${premium.length}\n╰──────*「 *SpartanoBOT* 」*────`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
 					break
                   case 'qrcode':
@@ -1563,7 +1563,7 @@ if (text.includes("placa"))
 		        case 'wame':
                   client.updatePresence(from, Presence.composing) 
                   options = {
-                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*hippko DOMINA*`,
+                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*Spartano DOMINA*`,
                   contextInfo: { mentionedJid: [sender] }
                   }
                   client.sendMessage(from, options, text, { quoted: mek } )
@@ -1616,7 +1616,7 @@ if (text.includes("placa"))
                 break
 				case 'daftar':
 					client.updatePresence(from, Presence.composing)
-					if (args.length < 1) return reply(`Parameter Salah\nCommand : ${prefix}daftar nama|umur\nContoh : ${prefix}daftar hippko|19`)
+					if (args.length < 1) return reply(`Parameter Salah\nCommand : ${prefix}daftar nama|umur\nContoh : ${prefix}daftar Spartano|19`)
 					var reg = body.slice(8)
 					var jeneng = reg.split("|")[0];
 					var umure = reg.split("|")[1];
@@ -1787,8 +1787,8 @@ if (text.includes("placa"))
 					client.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*\n\*Resultado da pesquisa* : *${tels}*`})
                     await limitAdd(sender)
 					break
-                case 'hippkojokes':
-				 data = fs.readFileSync('./src/hippkojokes.js');
+                case 'Spartanojokes':
+				 data = fs.readFileSync('./src/Spartanojokes.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -2463,13 +2463,13 @@ break
                    break
 					case 'totaluser':
 					if (!isOwner) return reply(mess.only.ownerB)    
-					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOO hippko BOT 👑* 」\n\`\`\``
+					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOO Spartano BOT 👑* 」\n\`\`\``
 					no = 0
 					for (let hehehe of user) {
 						no += 1
 						teks += `\`\`\`[${no.toString()}]\`\`\` @${hehehe.split('@')[0]}\n`
 					}
-					teks += `│+ Total de usuários : ${user.length}\n╰──────*「 *hippko* 」*────`
+					teks += `│+ Total de usuários : ${user.length}\n╰──────*「 *Spartano* 」*────`
 					 client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": user}})
 					break
 				case 'desligar':
@@ -2603,7 +2603,7 @@ break
 					await limitAdd(sender) 
 					break 
 					
-// recursos anime, random @hippko domina vida
+// recursos anime, random @Spartano domina vida
 
                 case 'anjing':
                    if (!isGroup) return reply(ind.groupo())
@@ -2989,7 +2989,7 @@ break
 					buff = await getBuffer(anu.result)
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
-				case 'texthippko':
+				case 'textSpartano':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(9)
 					if (tels.ength > 10) return reply('O texto é longo, até 9 caracteres')
@@ -3082,7 +3082,7 @@ break
 			    case 'owner':
 			    case 'dono':
                     client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                    client.sendMessage(from, 'Meu dono é esse gasoso aí tal de "hippko"🙄, chama ele aí ele diz que é "Top"',MessageType.text, { quoted: mek} )
+                    client.sendMessage(from, 'Meu dono é esse gasoso aí tal de "Spartano"🙄, chama ele aí ele diz que é "Top"',MessageType.text, { quoted: mek} )
                     break
                 case 'fitnah':	
 				case 'fake':          
@@ -3365,7 +3365,7 @@ break
 					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
 					me = client.user
 					uptime = process.uptime()
-					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* hippkoBOT\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* \n*──────────────────*` , text, { quoted: mek, })
+					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* SpartanoBOT\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* \n*──────────────────*` , text, { quoted: mek, })
 					break
 					case 'dellvip':
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -3374,7 +3374,7 @@ break
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = '╭────「 *PREMIUM👑* 」──*\n│+ *Número* : \n│+ *Status*: *DEATIVO*\n│ Te vejo para o próximo pedido🙂\n*╰──────「 *posição* 」────'
+						teks = '╭────「 *PREMIUM👑* 」──*\n│+ *Número* : \n│+ *Status*: *DESATIVO*\n│ Te vejo para o próximo pedido🙂\n*╰──────「 *posição* 」────'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
 						}
@@ -3385,9 +3385,9 @@ break
 					client.sendMessage(from, mentioned)
 				    }
 					break
-					case 'hippkodmin':
+					case 'Spartanodmin':
 					tod = await getBuffer(``)
-					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOT hippko ✨* 」\n*│+ wa.me/553181030138*╰──────*「 *hippko* 」*────*\n\n*_SE QUER SER ADMIN DO BOT hippko_*\n*_Tipo /iklan_*' })
+					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOT Spartano ✨* 」\n*│+ wa.me/553181003881*╰──────*「 *Spartano* 」*────*\n\n*_SE QUER SER ADMIN DO BOT Spartano_*\n*_Tipo /iklan_*' })
 					break
 				case 'iklan':
 					client.sendMessage(from, iklan(prefix) , text, { quoted: mek })
@@ -3396,7 +3396,7 @@ break
                     if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					sa = await getBuffer(`https://i.ibb.co/PcQ6tsB/79ac87b9358c.jpg`)
-					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *PREMIUM USER👑* 」\n*│+ wa.me/553181030138*╰──────*「 * hippko* 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO hippko BOT_*\n*wa.me/+5567996005372*' })
+					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *PREMIUM USER👑* 」\n*│+ wa.me/553181003881*╰──────*「 * Spartano* 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO Spartano BOT_*\n*wa.me/+553181003881*' })
 					break
 					case 'cekmod': 
  
@@ -3464,7 +3464,7 @@ break
 				case 'bot':
 			     	memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos basicos para bot:_*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*hippko Domina*'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos basicos para bot:_*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*Spartano Domina*'})
 					break
 				case 'belle3':
 					memein = await kagApi.memeindo()
@@ -3527,7 +3527,7 @@ break
 				case 'canal':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://imgur.com/gallery/xuTCBPO`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do hippko:*\n\n Tem não'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do Spartano:*\n\n Tem não'})
 					break
 				case 'nsfwloli1':
 					memein = await kagApi.memeindo()
@@ -3578,7 +3578,7 @@ break
 				case 'dono':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHz-fYDTGtGS7n-fMa1881LTvi6A6Cw52ldg&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* hippko\n*YOUTUBE:* Tem não\n*WPP:* wa.me/+553181030138\n*\n\nEspero que tenham gostado do bot️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* Spartano\n*YOUTUBE:* Tem não\n*WPP:* wa.me/+553181003881\n*\n\nEspero que tenham gostado do bot️'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
